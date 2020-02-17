@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rover">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Rover_jar/Rover.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

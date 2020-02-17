@@ -1,10 +1,9 @@
+
+import Exception.BadMoveException;
 public class Robot {
     Integer x;
     Integer y;
     Character direction;
-
-    public Robot() {
-    }
 
     public Robot(Integer x, Integer y, Character direction) {
         this.x = x;
@@ -12,7 +11,7 @@ public class Robot {
         this.direction = direction;
     }
 
-    void changePosition() {
+    void changePosition(Plateau plateau) throws BadMoveException {
         switch (this.direction) {
             case 'N':
                 this.y++;
@@ -27,6 +26,7 @@ public class Robot {
                 this.x--;
                 break;
         }
+       if(!plateau.isValidMove(this)) throw new BadMoveException("ERROR: The robot is out of the Plateau");
     }
 
 
