@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Rover:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Rover_jar</output-path>
-    <root id="archive" name="Rover.jar">
-      <element id="module-output" name="Rover" />
-    </root>
-  </artifact>
-</component>
