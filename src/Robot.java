@@ -4,6 +4,11 @@ public class Robot {
     Integer x;
     Integer y;
     Character direction;
+	
+	@Override
+    public String toString() {
+        return x + " " + y + "  " + direction;
+    }
 
     public Robot(Integer x, Integer y, Character direction) {
         this.x = x;

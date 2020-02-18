@@ -30,9 +30,7 @@ public class Rover {
 
             }
 
-        } catch (InvalidInstructionException e) {
-            System.out.println(e.getMessage());
-        } catch (BadMoveException e) {
+        } catch (InvalidInstructionException | BadMoveException e) {
             System.out.println(e.getMessage());
         } catch (Exception e) {
             System.out.println("ERROR in the input File");
@@ -65,7 +63,7 @@ public class Rover {
                 default: throw new InvalidInstructionException("ERROR in instruction sequence of the input.");
             }
         }
-        System.out.println(robot.x + " " + robot.y + "  " + robot.direction);
+        System.out.println(robot);
     }
 
 }
